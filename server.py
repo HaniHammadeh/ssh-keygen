@@ -33,7 +33,7 @@ class myserver(threading.Thread):
 			try:
 				print >>sys.stderr, 'connection from', client_address
 
-				# Receive the data in small chunks and retransmit it
+				# Receive the data in small chunks...
 				while True:
 					data = connection.recv(400)
 					print >>sys.stderr, 'received "%s"' % data
